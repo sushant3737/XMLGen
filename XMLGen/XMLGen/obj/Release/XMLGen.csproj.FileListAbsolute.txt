@@ -20,3 +20,14 @@ C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLG
 C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\bin\Release\XMLGen.exe
 C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\bin\Release\XMLGen.pdb
 C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\obj\Release\XMLGen.csprojResolveAssemblyReference.cache
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\bin\Release\XMLGen.exe.config
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\obj\Release\XMLGen.exe
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\obj\Release\XMLGen.pdb
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\bin\Release\XMLGen.exe
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\bin\Release\XMLGen.pdb
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\obj\Release\XMLGen.csprojResolveAssemblyReference.cache
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\obj\Release\XMLGen.UI.FieldProperty.resources
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\obj\Release\XMLGen.UI.MessageProperty.resources
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\obj\Release\XMLGen.UI.XMLGen.resources
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\obj\Release\XMLGen.Properties.Resources.resources
+D:\Projects\c#\XMLGen_17_5_2018\XMLGen\obj\Release\XMLGen.csproj.GenerateResource.Cache

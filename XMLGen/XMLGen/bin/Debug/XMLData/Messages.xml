@@ -1,0 +1,10 @@
+<Messages>
+  <Message>
+    <field Name="" MessageID="" />
+    <field Name="" FieldType="" BitSize="" MinValue="" MaxValue="" Value="" Visibilty="true" />
+  </Message>
+  <Message>
+    <field Name="" MessageID="" />
+    <field Name="" FieldType="" BitSize="" MinValue="" MaxValue="" Value="" Visibilty="" />
+  </Message>
+</Messages>

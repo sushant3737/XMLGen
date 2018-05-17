@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Messages");
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Messages");
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_AppStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -40,7 +40,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Exportbinary = new System.Windows.Forms.ToolStripMenuItem();
-            this.xMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xMLToolStripMenuItem_export = new System.Windows.Forms.ToolStripMenuItem();
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Importbinary = new System.Windows.Forms.ToolStripMenuItem();
             this.Messages_TreeView = new System.Windows.Forms.TreeView();
@@ -49,7 +49,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.addFieldToolStripBelowMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.deleteMessageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgview_properties = new System.Windows.Forms.DataGridView();
             this.dgview_FieldEdit = new System.Windows.Forms.DataGridView();
@@ -125,36 +125,37 @@
             // 
             this.exportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem_Exportbinary,
-            this.xMLToolStripMenuItem});
+            this.xMLToolStripMenuItem_export});
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exportToolStripMenuItem.Text = "Export";
             // 
             // ToolStripMenuItem_Exportbinary
             // 
             this.ToolStripMenuItem_Exportbinary.Name = "ToolStripMenuItem_Exportbinary";
-            this.ToolStripMenuItem_Exportbinary.Size = new System.Drawing.Size(107, 22);
+            this.ToolStripMenuItem_Exportbinary.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItem_Exportbinary.Text = "Binary";
             this.ToolStripMenuItem_Exportbinary.Click += new System.EventHandler(this.ToolStripMenuItem_Exportbinary_Click);
             // 
-            // xMLToolStripMenuItem
+            // xMLToolStripMenuItem_export
             // 
-            this.xMLToolStripMenuItem.Name = "xMLToolStripMenuItem";
-            this.xMLToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.xMLToolStripMenuItem.Text = "XML";
+            this.xMLToolStripMenuItem_export.Name = "xMLToolStripMenuItem_export";
+            this.xMLToolStripMenuItem_export.Size = new System.Drawing.Size(152, 22);
+            this.xMLToolStripMenuItem_export.Text = "XML";
+            this.xMLToolStripMenuItem_export.Click += new System.EventHandler(this.xMLToolStripMenuItem_export_Click);
             // 
             // importToolStripMenuItem
             // 
             this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem_Importbinary});
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.importToolStripMenuItem.Text = "Import";
             // 
             // ToolStripMenuItem_Importbinary
             // 
             this.ToolStripMenuItem_Importbinary.Name = "ToolStripMenuItem_Importbinary";
-            this.ToolStripMenuItem_Importbinary.Size = new System.Drawing.Size(107, 22);
+            this.ToolStripMenuItem_Importbinary.Size = new System.Drawing.Size(152, 22);
             this.ToolStripMenuItem_Importbinary.Text = "Binary";
             this.ToolStripMenuItem_Importbinary.Click += new System.EventHandler(this.ToolStripMenuItem_Importbinary_Click);
             // 
@@ -165,10 +166,10 @@
             this.Messages_TreeView.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Messages_TreeView.Location = new System.Drawing.Point(0, 24);
             this.Messages_TreeView.Name = "Messages_TreeView";
-            treeNode1.Name = "Messages";
-            treeNode1.Text = "Messages";
+            treeNode3.Name = "Messages";
+            treeNode3.Text = "Messages";
             this.Messages_TreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1});
+            treeNode3});
             this.Messages_TreeView.Size = new System.Drawing.Size(230, 533);
             this.Messages_TreeView.TabIndex = 2;
             this.Messages_TreeView.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.Messages_TreeView_AfterLabelEdit);
@@ -184,10 +185,10 @@
             this.toolStripSeparator1,
             this.addFieldToolStripBelowMenuItem,
             this.toolStripSeparator2,
-            this.deleteMessageToolStripMenuItem,
+            this.deleteToolStripMenuItem,
             this.editToolStripMenuItem});
             this.cntxtMstrip_TreeNode.Name = "contextMenuStrip1";
-            this.cntxtMstrip_TreeNode.Size = new System.Drawing.Size(181, 104);
+            this.cntxtMstrip_TreeNode.Size = new System.Drawing.Size(181, 126);
             // 
             // addMessageBelowToolStripMenuItem
             // 
@@ -213,12 +214,12 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
-            // deleteMessageToolStripMenuItem
+            // deleteToolStripMenuItem
             // 
-            this.deleteMessageToolStripMenuItem.Name = "deleteMessageToolStripMenuItem";
-            this.deleteMessageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.deleteMessageToolStripMenuItem.Text = "Delete";
-            this.deleteMessageToolStripMenuItem.Click += new System.EventHandler(this.deleteMessageToolStripMenuItem_Click);
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -237,8 +238,8 @@
             // 
             // dgview_FieldEdit
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgview_FieldEdit.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgview_FieldEdit.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgview_FieldEdit.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgview_FieldEdit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgview_FieldEdit.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -285,7 +286,7 @@
         private System.Windows.Forms.TreeView Messages_TreeView;
         private System.Windows.Forms.DataGridView dgview_properties;
         private System.Windows.Forms.ContextMenuStrip cntxtMstrip_TreeNode;
-        private System.Windows.Forms.ToolStripMenuItem deleteMessageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem messagePropertiesToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgview_FieldEdit;
@@ -296,7 +297,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Exportbinary;
-        private System.Windows.Forms.ToolStripMenuItem xMLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xMLToolStripMenuItem_export;
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Importbinary;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel_AppStatus;

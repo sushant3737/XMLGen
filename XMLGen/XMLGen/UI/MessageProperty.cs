@@ -1,8 +1,8 @@
 ﻿// <copyright file="MessageProperty.cs" >
-// Copyright (c) 2017 All Rights Reserved
+// Copyright (c) 2018 All Rights Reserved
 // </copyright>
 // <author>Sushant hiremath</author>
-// <date>12/05/2017 11:39:58 AM </date>
+// <date>17/05/2018 11:39:58 AM </date>
 // <summary>Form to add Message property</summary>
 
 using System;
@@ -32,13 +32,21 @@ namespace XMLGen.UI
             string key = txtbx_key.Text;
             string value = txtbx_value.Text;
 
+
             if (!string.IsNullOrEmpty(key) && !string.IsNullOrEmpty(value))
             {
-                MsgAttriblist.Add(new KeyValue { Key = key, Value = value });
+                //if (value != "byte" || value != "sbyte" || value != "short" || value != "ushort" || value != "bool" || value != "string" || value != "int" || value != "uint" || value != "long" || value != "ulong")
+                //{
+                //    return;
+                //}
+                if (!MsgAttriblist.Exists(x => x.Key == key))
+                {
+                    MsgAttriblist.Add(new KeyValue { Key = key, ValueType = value });
+                    dgview_MessageProperties.DataSource = null;
+                    dgview_MessageProperties.DataSource = MsgAttriblist;
+                }
             }
-            dgview_MessageProperties.DataSource = null;
-            dgview_MessageProperties.DataSource = MsgAttriblist;
-            dgview_MessageProperties.Refresh();
+
         }
 
         private void btn_AddDefaultMessageAtrrib_Click(object sender, EventArgs e)

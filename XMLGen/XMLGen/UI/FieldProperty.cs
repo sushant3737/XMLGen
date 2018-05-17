@@ -1,8 +1,8 @@
 ﻿// <copyright file="MessageProperty.cs" >
-// Copyright (c) 2017 All Rights Reserved
+// Copyright (c) 2018 All Rights Reserved
 // </copyright>
 // <author>Sushant hiremath</author>
-// <date>12/05/2017 11:39:58 AM </date>
+// <date>17/05/2018 11:39:58 AM </date>
 // <summary>Form to add Field property</summary>
 using System;
 using System.Collections.Generic;
@@ -36,10 +36,18 @@ namespace XMLGen.UI
 
             if (!string.IsNullOrEmpty(key) && !string.IsNullOrEmpty(value))
             {
-                Fieldlist.Add(new KeyValue { Key = key, Value = value });
+                //if (value != "byte" && value != "sbyte" && value != "short" && value != "ushort" && value != "bool" && value != "string" && value != "int" && value != "uint" && value != "long" && value != "ulong")
+                //{
+                //    return;
+                //}
+                if (!Fieldlist.Exists(x => x.Key == key))
+                { 
+                    Fieldlist.Add(new KeyValue { Key = key, ValueType = value });
+                    dgview_FieldProperties.DataSource = null;
+                    dgview_FieldProperties.DataSource = Fieldlist;
+                }
             }
-            dgview_FieldProperties.DataSource = null ;
-            dgview_FieldProperties.DataSource = Fieldlist;
+
         }
 
         private bool ADDDefaultFields()

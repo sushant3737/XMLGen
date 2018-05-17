@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("XMLGen")]
-[assembly: AssemblyCopyright("Copyright © Sushant  2017")]
+[assembly: AssemblyCopyright("Copyright © Sushant  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

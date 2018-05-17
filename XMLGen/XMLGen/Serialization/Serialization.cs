@@ -1,4 +1,12 @@
-﻿using System;
+﻿
+// <copyright file="Serialization.cs" >
+// Copyright (c) 2018 All Rights Reserved
+// </copyright>
+// <author>Sushant hiremath</author>
+// <date>17/05/2018 11:39:58 AM </date>
+// <summary>Class to export/import to binary</summary>
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +22,9 @@ namespace XMLGen.Serialization
         static FileStream fs = null;
         static string Filepath = AppDomain.CurrentDomain.BaseDirectory ;
         
-        public static void Serialize<Object>(Object dictionary,string filename)
+        public static bool Serialize<Object>(Object dictionary,string filename)
         {
+            bool rettype = true;
             try // try to serialize the collection to a file
             {
                 FileInfo Fi = new FileInfo(Filepath + filename);
@@ -38,7 +47,9 @@ namespace XMLGen.Serialization
             }
             catch (IOException)
             {
+                return false;
             }
+            return rettype;
         }
 
         public static Object Deserialize<Object>(Stream stream, string filename) where Object : new()
