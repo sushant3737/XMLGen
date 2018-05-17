@@ -108,6 +108,7 @@
             this.Controls.Add(this.dgview_FieldProperties);
             this.Name = "FieldProperty";
             this.Text = "FieldProperty";
+            this.VisibleChanged += new System.EventHandler(this.FieldProperty_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgview_FieldProperties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

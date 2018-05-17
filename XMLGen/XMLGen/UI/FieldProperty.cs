@@ -24,7 +24,9 @@ namespace XMLGen.UI
         {
             InitializeComponent();
             ADDDefaultFields();
+            dgview_FieldProperties.DataSource = null;
             dgview_FieldProperties.DataSource = Fieldlist;
+            dgview_FieldProperties.Refresh();
         }
 
         private void btn_addField_Click(object sender, EventArgs e)
@@ -55,6 +57,7 @@ namespace XMLGen.UI
             DefaultFieldlist.Add(new KeyValue { Key = "Visibilty", ValueType = "bool" });
 
             cmbbx_Defaultfields.Items.AddRange(DefaultFieldlist.Select(n => n.Key).ToArray());
+            cmbbx_Defaultfields.Refresh();
             return returntype;
         }
 
@@ -68,12 +71,10 @@ namespace XMLGen.UI
             }
         }
 
-    }
-
-    public class KeyValue 
-    {
-        public string Key {get;set;}
-        public string ValueType {get;set;}
-        public object Value { get; set; }
+        private void FieldProperty_VisibleChanged(object sender, EventArgs e)
+        {
+            //dgview_FieldProperties.DataSource = null;
+            //dgview_FieldProperties.DataSource = Fieldlist;
+        }
     }
 }

@@ -8,3 +8,15 @@ C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen\XMLGen\obj\Rele
 C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen\XMLGen\obj\Release\XMLGen.csproj.GenerateResource.Cache
 C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen\XMLGen\obj\Release\XMLGen.exe
 C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen\XMLGen\obj\Release\XMLGen.pdb
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen\XMLGen\obj\Release\XMLGen.csprojResolveAssemblyReference.cache
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\bin\Release\XMLGen.exe.config
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\obj\Release\XMLGen.exe
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\obj\Release\XMLGen.pdb
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\obj\Release\XMLGen.UI.FieldProperty.resources
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\obj\Release\XMLGen.UI.MessageProperty.resources
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\obj\Release\XMLGen.UI.XMLGen.resources
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\obj\Release\XMLGen.Properties.Resources.resources
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\obj\Release\XMLGen.csproj.GenerateResource.Cache
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\bin\Release\XMLGen.exe
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\bin\Release\XMLGen.pdb
+C:\Users\smhiremath\Documents\Visual Studio 2012\Projects\XMLGen_22_sept_17\XMLGen\obj\Release\XMLGen.csprojResolveAssemblyReference.cache

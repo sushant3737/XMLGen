@@ -38,6 +38,7 @@ namespace XMLGen.UI
             }
             dgview_MessageProperties.DataSource = null;
             dgview_MessageProperties.DataSource = MsgAttriblist;
+            dgview_MessageProperties.Refresh();
         }
 
         private void btn_AddDefaultMessageAtrrib_Click(object sender, EventArgs e)
@@ -47,6 +48,7 @@ namespace XMLGen.UI
                 MsgAttriblist.Add(DefaultMsgAttriblist.FindLast(x => x.Key == cmbbx_DefaultMsgAttribs.Text));
                 dgview_MessageProperties.DataSource = null;
                 dgview_MessageProperties.DataSource = MsgAttriblist;
+                dgview_MessageProperties.Refresh();
             }
         }
         private bool ADDDefaultMsgAttribs()
@@ -56,10 +58,17 @@ namespace XMLGen.UI
 
             cmbbx_DefaultMsgAttribs.Items.Clear();
             DefaultMsgAttriblist.Add(new KeyValue { Key = "Name", ValueType = "string" });
-            DefaultMsgAttriblist.Add(new KeyValue { Key = "MessageID", ValueType = "string" });
+            DefaultMsgAttriblist.Add(new KeyValue { Key = "MessageID", ValueType = "int" });
 
             cmbbx_DefaultMsgAttribs.Items.AddRange(DefaultMsgAttriblist.Select(n => n.Key).ToArray());
             return returntype;
+        }
+
+        private void MessageProperty_VisibleChanged(object sender, EventArgs e)
+        {
+            dgview_MessageProperties.DataSource = null;
+            dgview_MessageProperties.DataSource = MsgAttriblist;
+            dgview_MessageProperties.Refresh();
         }
     }
 }

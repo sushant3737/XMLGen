@@ -108,6 +108,7 @@
             this.Controls.Add(this.dgview_MessageProperties);
             this.Name = "MessageProperty";
             this.Text = "MessageProperty";
+            this.VisibleChanged += new System.EventHandler(this.MessageProperty_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgview_MessageProperties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
